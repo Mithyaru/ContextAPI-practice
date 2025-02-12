@@ -1,16 +1,22 @@
-import { useContext } from 'react';
-import { pokemonContext } from '../context/ContextoPoke';
-
+import { useContext } from "react";
+import { pokemonContext } from "../context/ContextoPoke";
 
 const PokemonList = () => {
-  const { pokeList } = useContext(pokemonContext)
+  const { details } = useContext(pokemonContext);
 
   return (
-    <ul>
-      {pokeList.map((pokemon, index) => (
-        <li key={index}>{pokemon.name}</li>
-      ))}
-    </ul>
+    <>
+      <ul>
+        {details.length > 0 ? (
+          details.map((pokemon, index) => <li key={index}>
+          {pokemon.name + ' - '}
+          {pokemon.types.map((t) => t.type.name).join(", ")}
+          </li>)
+        ) : (
+          <p>Carregando...</p>
+        )}
+      </ul>
+    </>
   );
 };
 
