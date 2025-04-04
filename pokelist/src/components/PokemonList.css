@@ -1,0 +1,27 @@
+.main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 4rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cards-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 100%;
+}

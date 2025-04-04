@@ -1,0 +1,30 @@
+:root {
+  --fire: #ff6f61;
+  --water: #4a90e2;
+  --grass: #77dd77;
+  --electric: #f8d030;
+  --ice: #8AD6EA;
+  --poison: #C151C1;
+  --ghost: #6D686D;
+  --flying: #D5D6D6;
+  --bug: #66E54C;
+  --ground: #BD814A;
+  --fairy: #F692C9;
+  --psychic: #DC5CB4;
+  --fighting: #F05353;
+  --rock: #AAA9A9;
+  --steel: #CDCDCD;
+  --dark: #484848;
+  --normal: #d3d3d3;
+}
+
+.card-item {
+  background-color: var(--type-color, #ccc); /* fallback opcional */
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.img-container {
+  width: 100%;
+}
